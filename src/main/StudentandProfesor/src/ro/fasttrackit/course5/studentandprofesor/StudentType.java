@@ -1,6 +1,6 @@
 package ro.fasttrackit.course5.studentandprofesor;
 
-public enum StudentType {
+public enum StudentType implements ScolarType{
     BACHELORS("Bachelor"),
     MASTERS("diploma engineer"),
     PHD("doctor");
@@ -15,4 +15,5 @@ public enum StudentType {
     {
         return graduated;
     }
+
 }

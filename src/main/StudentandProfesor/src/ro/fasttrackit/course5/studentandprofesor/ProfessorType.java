@@ -1,6 +1,6 @@
 package ro.fasttrackit.course5.studentandprofesor;
 
-public enum ProfessorType {
+public enum ProfessorType implements ScolarType {
     ASSISTANT("2 year experience"),
     ASSOCIATE("1 year experience"),
     PROFESSOR("10 years experience");

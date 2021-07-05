@@ -9,6 +9,7 @@ public abstract class Student implements Human {
     private String dateOfEnrollment;
     private String facultyName;
     private String specializationName;
+    StudentType type;
 
     @Override
     public String toString()
@@ -33,5 +34,12 @@ public abstract class Student implements Human {
   {
       return Objects.hash(lastName,firstName, dateOfBirth, dateOfEnrollment, facultyName, specializationName);
   }
+
+  @Override
+   public ScolarType getType (){
+
+        return type;
+  }
+
 
 }

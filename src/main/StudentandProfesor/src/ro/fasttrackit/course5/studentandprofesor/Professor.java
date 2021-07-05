@@ -2,12 +2,13 @@ package ro.fasttrackit.course5.studentandprofesor;
 
 import java.util.Objects;
 
-public abstract class Professor implements Human {
+public abstract class Professor implements Human{
     private String firstName;
     private String lastName;
     private String dateOfBirth;
     private String dateOfHiring;
     private String specializationName;
+    ProfessorType type;
 
 
     @Override
@@ -34,4 +35,8 @@ public abstract class Professor implements Human {
         return Objects.hash(lastName,firstName, dateOfBirth, dateOfHiring, specializationName);
     }
 
+    @Override
+    public ScolarType getType (){
+        return type;
+    }
 }
